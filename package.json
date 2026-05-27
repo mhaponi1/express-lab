@@ -1,0 +1,12 @@
+{
+  "name": "express-lab",
+  "version": "1.0.0",
+  "description": "Express.js lab - Mykola Haponiuk 77550",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
