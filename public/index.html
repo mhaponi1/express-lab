@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Express Lab - Mykola Haponiuk 77550</title>
+</head>
+<body>
+    <h1>Dane studenta</h1>
+    <div id="result">Ładowanie...</div>
+    <script>
+        fetch('/api/hello')
+            .then(function(response) { return response.json(); })
+            .then(function(data) {
+                document.getElementById('result').innerHTML =
+                    '<p>Imię: <span>' + data.imie + '</span></p>' +
+                    '<p>Nazwisko: <span>' + data.nazwisko + '</span></p>' +
+                    '<p>Numer indeksu: <span>' + data.numerIndeksu + '</span></p>';
+            });
+    </script>
+</body>
+</html>
